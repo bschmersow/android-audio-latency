@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fOVscrollViewContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start" >
+
+    <GridLayout
+        android:id="@+id/GridLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:rowCount="18" >
+
+        <TextView
+            android:id="@+id/twOverviewTitle"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_row="0"
+            android:text="System Overview"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/btnOvTestSound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:text="Play Test Sound" />
+
+        <TextView
+            android:id="@+id/twAndroidVersion"
+            android:layout_column="0"
+            android:layout_row="2" />
+
+        <TextView
+            android:id="@+id/twSDKVersion"
+            android:layout_column="0"
+            android:layout_row="3" />
+
+        <TextView
+            android:id="@+id/twAudio"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_row="4"
+            android:text="Audio parameters:" />
+
+        <TextView
+            android:id="@+id/twBufferSize"
+            android:layout_column="0"
+            android:layout_row="5" />
+
+        <TextView
+            android:id="@+id/twSampleRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="6" />
+
+        <TextView
+            android:id="@+id/twChangeSr"
+            android:layout_column="0"
+            android:layout_row="7"
+            android:text="Change samplerate:" />
+
+        <Spinner
+            android:id="@+id/spSamplerate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="8" />
+
+        <TextView
+            android:id="@+id/twThreshold"
+            android:layout_column="0"
+            android:layout_row="9"
+            android:text="Impulse recognition threshold:" />
+
+        <Spinner
+            android:id="@+id/spThreshold"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="10" />
+
+        <TextView
+            android:id="@+id/twMinBuffersize"
+            android:layout_column="0"
+            android:layout_row="11" />
+
+        <Spinner
+            android:id="@+id/spBuffersize"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="12" />
+
+        <TextView
+            android:id="@+id/twNumberOfTests"
+            android:layout_column="0"
+            android:layout_row="13"
+            android:text="Number of impulses (length of test):" />
+
+        <Spinner
+            android:id="@+id/spNumberOfTests"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="14" />
+    </GridLayout>
+
+</ScrollView>
